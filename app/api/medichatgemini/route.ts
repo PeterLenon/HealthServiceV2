@@ -9,12 +9,12 @@ export const maxDuration = 60;
 // export const runtime = 'edge';
 
 const pinecone = new Pinecone({
-    apiKey: process.env.PINECONE_API_KEY ?? "",
+    apiKey: process.env.PINECONE_API_KEY || "pcsk_22CcrZ_6CrtgbfZMEEBeWdmP2a3QvKWszgkMBhhiDcR7LmMUM8zABCX2RoamBx56vYSXgY",
 });
 
 const google = createGoogleGenerativeAI({
     baseURL: 'https://generativelanguage.googleapis.com/v1beta',
-    apiKey: process.env.GEMINI_API_KEY 
+    apiKey: process.env.GEMINI_API_KEY || "AIzaSyBgc5_JWMlOQ2bCEF4AlynJKdKFZwULtIQ"
 });
 
 // gemini-1.5-pro-latest
